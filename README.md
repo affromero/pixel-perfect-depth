@@ -32,7 +32,8 @@ cd pixel-perfect-depth
 pip install -r requirements.txt
 ```
 
-Download the checkpoints listed [here](#pre-trained-models) and put them under the `checkpoints` directory.
+Download our pretrained model [ppd.pth](https://huggingface.co/gangweix/Pixel-Perfect-Depth/resolve/main/ppd.pth) and put them under the `checkpoints` directory.
+In addition, you also need to download the pretrained model [depth_anything_v2_vitl](https://huggingface.co/depth-anything/Depth-Anything-V2-Large/resolve/main/depth_anything_v2_vitl.pth?download=true) and put them under the `checkpoints` directory.
 
 ### Running script on *images*
 
