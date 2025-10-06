@@ -69,6 +69,11 @@ Please download the pretrained model [moge2.pt](https://huggingface.co/Ruicheng/
 python run_point_cloud.py --save_pcd
 ```
 
+## Qualitative Comparisons with Previous Methods
+
+Our model preserves more fine-grained details than Depth Anything v2 and MoGe 2, while demonstrating significantly higher robustness compared to Depth Pro.
+![teaser](assets/demo.png)
+
 ## Acknowledgement
 
 We are grateful to the [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2), [MoGe](https://github.com/microsoft/MoGe) and [DiT](https://github.com/facebookresearch/DiT) teams for their code and model release. We would also like to sincerely thank the NeurIPS reviewers for their appreciation of this work (ratings: 5, 5, 5, 5).
