@@ -72,6 +72,7 @@ python run_point_cloud.py --save_pcd
 ## Qualitative Comparisons with Previous Methods
 
 Our model preserves more fine-grained details than Depth Anything v2 and MoGe 2, while demonstrating significantly higher robustness compared to Depth Pro.
+
 ![teaser](assets/demo.png)
 
 ## Acknowledgement
