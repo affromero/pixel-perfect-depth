@@ -80,6 +80,15 @@ Our model preserves more fine-grained details than Depth Anything v2 and MoGe 2,
 
 We are grateful to the [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2), [MoGe](https://github.com/microsoft/MoGe) and [DiT](https://github.com/facebookresearch/DiT) teams for their code and model release. We would also like to sincerely thank the NeurIPS reviewers for their appreciation of this work (ratings: 5, 5, 5, 5).
 
-## LICENSE
+## Citation
 
-Pixel-Perfect Depth model is under the Apache-2.0 license.
+If you find this project useful, please consider citing:
+
+```bibtex
+@article{xu2025pixel,
+  title={Pixel-Perfect Depth with Semantics-Prompted Diffusion Transformers},
+  author={Xu, Gangwei and Lin, Haotong and Luo, Hongcheng and Wang, Xianqi and Yao, Jingfeng and Zhu, Lianghui and Pu, Yuechuan and Chi, Cheng and Sun, Haiyang and Wang, Bing and others},
+  journal={arXiv preprint arXiv:2510.07316},
+  year={2025}
+}
+```
