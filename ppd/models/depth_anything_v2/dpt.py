@@ -171,25 +171,17 @@ class DepthAnythingV2(nn.Module):
         self.pretrained = DINOv2(model_name=encoder)
         # self.depth_head = DPTHead(self.pretrained.embed_dim, features, use_bn, out_channels=out_channels, use_clstoken=use_clstoken)
     
-    def forward(self, x):
-
+    def forward_semantics(self, x):
         ori_h, ori_w = x.shape[-2:]
-
         mean=[0.485, 0.456, 0.406]
         std=[0.229, 0.224, 0.225]
         mean = torch.tensor(mean).view(1, 3, 1, 1).to(x.device)
         std = torch.tensor(std).view(1, 3, 1, 1).to(x.device)
         x = (x - mean) / std
-
         new_h = (ori_h // 16) * 14
         new_w = (ori_w // 16) * 14
-
         x = F.interpolate(x, size=(new_h, new_w), mode='bicubic', align_corners=False)
-
-        # patch_h, patch_w = x.shape[-2] // 14, x.shape[-1] // 14
-        # features = self.pretrained.get_intermediate_layers(x, self.intermediate_layer_idx[self.encoder], return_class_token=True)
         semantics = self.pretrained.forward_features(x)["x_norm_patchtokens"]
-
         return semantics
     
     @torch.no_grad()
