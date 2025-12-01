@@ -39,9 +39,10 @@ its estimated depth maps can produce high-quality, flying-pixel-free point cloud
 
 Our pretrained models are available on the huggingface hub:
 
-| Model | Params | Checkpoint | Training Resolution |
-|:-|-:|:-:|:-:|
-| PPD-Large | 500M | [Download](https://huggingface.co/gangweix/Pixel-Perfect-Depth/resolve/main/ppd.pth) | 1024×768 |
+| Model | Semantics | Params | Checkpoint | Training Resolution |
+|:-|:-|-:|:-:|:-:|
+| PPD | DA2 | 500M | [Download](https://huggingface.co/gangweix/Pixel-Perfect-Depth/resolve/main/ppd.pth) | 1024×768 |
+| PPD | MoGe2 | 500M | [Download](https://drive.google.com/file/d/1tabmcsbRVDKDfmO4KU1vOjurzN-wp0HV/view?usp=sharing) | 1024×768 |
 
 ## Usage
 
