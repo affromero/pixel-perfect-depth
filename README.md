@@ -35,6 +35,9 @@ its estimated depth maps can produce high-quality, flying-pixel-free point cloud
 - **2025-12-01:** We release a new PPD model together with its weights, which leverage MoGe2 to provide semantics and deliver a 20–30% improvement on zero-shot benchmarks.
 - **2025-10-01:** Paper, project page, code, models, and demo are all released.
 
+## Benchmarks
+![benchmark](assets/benchmarks.jpg)
+
 ## Pre-trained Models
 
 Our pretrained models are available on the huggingface hub:
