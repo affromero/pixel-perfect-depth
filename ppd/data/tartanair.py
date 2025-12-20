@@ -12,9 +12,11 @@ class Dataset(BaseDataset):
         self.rgb_files = []
         self.depth_files = []
         for line in lines:
-            rgb_path, dpt_path = line.strip().split(' ')
-            self.rgb_files.append(os.path.join(self.cfg.data_root, rgb_path))
-            self.depth_files.append(os.path.join(self.cfg.data_root, dpt_path))
+            rgb_path = line.strip()
+            full_rgb_path = os.path.join(self.cfg.data_root, rgb_path)
+            full_dpt_path = full_rgb_path.replace('image_left', 'depth_left').replace('left.png', 'left_depth.npy')
+            self.rgb_files.append(full_rgb_path)
+            self.depth_files.append(full_dpt_path)
         assert len(self.rgb_files) == len(self.depth_files)
 
     def read_depth(self, index, depth=None):
