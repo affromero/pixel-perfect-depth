@@ -92,7 +92,7 @@ If you find this project useful, please consider citing:
 
 ```bibtex
 @article{xu2025pixel,
-  title={Pixel-Perfect Depth with Semantics-Prompted Diffusion Transformers},
+  title={Pixel-perfect depth with semantics-prompted diffusion transformers},
   author={Xu, Gangwei and Lin, Haotong and Luo, Hongcheng and Wang, Xianqi and Yao, Jingfeng and Zhu, Lianghui and Pu, Yuechuan and Chi, Cheng and Sun, Haiyang and Wang, Bing and others},
   journal={arXiv preprint arXiv:2510.07316},
   year={2025}
