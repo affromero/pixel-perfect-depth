@@ -1,0 +1,12 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]
+
+[project]
+description = "Pixel-Perfect Depth estimation with MoGe2 backend"
+name = "pixel_perfect_depth"
+requires-python = ">=3.10"
+version = "0.1.0"
+
+[tool.setuptools.packages.find]
+include = ["ppd*"]
